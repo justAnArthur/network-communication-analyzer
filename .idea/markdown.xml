@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownSettings">
+    <option name="customStylesheetText" value="body {&#10;    max-width: 50rem;&#10;    margin-left: auto;&#10;    margin-right: auto;&#10;}&#10;" />
+    <option name="showProblemsInCodeBlocks" value="false" />
+  </component>
+</project>

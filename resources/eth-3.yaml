@@ -1,0 +1,860 @@
+name: PKS2023/24
+packets:
+- frame_number: 1
+  len_frame_pcap: 70
+  len_frame_medium: 74
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 38 57 9C 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 0D E0 71 94 C3 50 18
+    1F B4 86 BC 00 00 55 53 45 52 20 61 6E 6F 6E 79
+    6D 6F 75 73 0D 0A
+- frame_number: 2
+  len_frame_pcap: 60
+  len_frame_medium: 64
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 28 CA D4 40 00 33 06 F6 69 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 94 C3 20 87 48 1D 50 10
+    00 73 7D A2 00 00 00 00 00 00 00 00
+- frame_number: 3
+  len_frame_pcap: 129
+  len_frame_medium: 133
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 73 CA D5 40 00 33 06 F6 1D 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 94 C3 20 87 48 1D 50 18
+    00 73 E2 03 00 00 33 33 31 20 41 6E 6F 6E 79 6D
+    6F 75 73 20 6C 6F 67 69 6E 20 6F 6B 2C 20 73 65
+    6E 64 20 79 6F 75 72 20 63 6F 6D 70 6C 65 74 65
+    20 65 6D 61 69 6C 20 61 64 64 72 65 73 73 20 61
+    73 20 79 6F 75 72 20 70 61 73 73 77 6F 72 64 0D
+    0A
+- frame_number: 4
+  len_frame_pcap: 54
+  len_frame_medium: 60
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 28 57 9D 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 1D E0 71 95 0E 50 10
+    1F 69 86 AC 00 00
+- frame_number: 5
+  len_frame_pcap: 66
+  len_frame_medium: 70
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.175.98.37
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52543
+  dst_port: 2222
+  app_protocol:
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 34 57 9E 40 00 80 06 00 00 C0 A8 01 21 93 AF
+    62 25 CD 3F 08 AE C0 30 A3 A6 00 00 00 00 80 02
+    20 00 B7 C4 00 00 02 04 05 B4 01 03 03 08 01 01
+    04 02
+- frame_number: 6
+  len_frame_pcap: 73
+  len_frame_medium: 77
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 3B 57 9F 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 1D E0 71 95 0E 50 18
+    1F 69 86 BF 00 00 50 41 53 53 20 61 73 40 67 6D
+    61 69 6C 2E 63 6F 6D 0D 0A
+- frame_number: 7
+  len_frame_pcap: 109
+  len_frame_medium: 113
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 5F CA D6 40 00 33 06 F6 30 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 95 0E 20 87 48 30 50 18
+    00 73 BD 64 00 00 32 33 30 2D 48 65 6C 6C 6F 2C
+    20 55 4E 4B 4E 4F 57 4E 20 61 74 20 38 35 2D 31
+    33 35 2D 32 30 38 2D 31 39 37 2E 62 73 61 2E 73
+    6C 6F 76 61 6E 65 74 2E 73 6B 21 0D 0A
+- frame_number: 8
+  len_frame_pcap: 60
+  len_frame_medium: 64
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 2B CA D7 40 00 33 06 F6 63 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 95 45 20 87 48 30 50 18
+    00 73 52 F5 00 00 20 0D 0A 00 00 00
+- frame_number: 9
+  len_frame_pcap: 121
+  len_frame_medium: 125
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 6B CA D8 40 00 33 06 F6 22 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 95 48 20 87 48 30 50 18
+    00 73 7D CD 00 00 20 20 20 20 56 69 74 65 6A 74
+    65 20 6E 61 20 46 54 50 20 73 65 72 76 65 72 75
+    20 20 20 20 20 20 20 20 20 20 20 57 65 6C 63 6F
+    6D 65 20 74 6F 20 74 68 65 20 46 54 50 20 73 65
+    72 76 65 72 20 6F 66 0D 0A
+- frame_number: 10
+  len_frame_pcap: 118
+  len_frame_medium: 122
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 68 CA D9 40 00 33 06 F6 24 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 95 8B 20 87 48 30 50 18
+    00 73 34 E4 00 00 20 20 20 20 20 46 61 6B 75 6C
+    74 79 20 69 6E 66 6F 72 6D 61 74 69 6B 79 20 20
+    20 20 20 20 20 20 20 20 20 20 20 20 20 20 46 61
+    63 75 6C 74 79 20 6F 66 20 49 6E 66 6F 72 6D 61
+    74 69 63 73 0D 0A
+- frame_number: 11
+  len_frame_pcap: 54
+  len_frame_medium: 60
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 28 57 A0 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 30 E0 71 95 CB 50 10
+    1E AC 86 AC 00 00
+- frame_number: 12
+  len_frame_pcap: 119
+  len_frame_medium: 123
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 69 CA DA 40 00 33 06 F6 22 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 95 CB 20 87 48 30 50 18
+    00 73 A8 72 00 00 20 4D 61 73 61 72 79 6B 6F 76
+    79 20 75 6E 69 76 65 72 7A 69 74 79 20 76 20 42
+    72 6E 65 20 20 20 20 20 20 20 20 20 20 4D 61 73
+    61 72 79 6B 20 55 6E 69 76 65 72 73 69 74 79 2C
+    20 42 72 6E 6F 0D 0A
+- frame_number: 13
+  len_frame_pcap: 60
+  len_frame_medium: 64
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 2B CA DB 40 00 33 06 F6 5F 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 96 0C 20 87 48 30 50 18
+    00 73 52 2E 00 00 20 0D 0A 00 00 00
+- frame_number: 14
+  len_frame_pcap: 125
+  len_frame_medium: 129
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 6F CA DC 40 00 33 06 F6 1A 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 96 0F 20 87 48 30 50 18
+    00 73 3A FC 00 00 20 54 68 69 73 20 46 54 50 20
+    73 69 74 65 20 69 73 20 69 6E 20 42 72 6E 6F 2C
+    20 43 7A 65 63 68 20 52 65 70 75 62 6C 69 63 2C
+    20 45 75 72 6F 70 65 2E 20 20 54 68 65 20 6C 6F
+    63 61 6C 20 74 69 6D 65 20 69 73 0D 0A
+- frame_number: 15
+  len_frame_pcap: 54
+  len_frame_medium: 60
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 28 57 A1 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 30 E0 71 96 56 50 10
+    1E 21 86 AC 00 00
+- frame_number: 16
+  len_frame_pcap: 130
+  len_frame_medium: 134
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 74 CA DD 40 00 33 06 F6 14 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 96 56 20 87 48 30 50 18
+    00 73 35 01 00 00 20 53 75 6E 20 4D 61 72 20 33
+    31 20 30 30 3A 35 32 3A 32 35 20 32 30 31 33 2E
+    20 59 6F 75 20 61 72 65 20 75 73 65 72 20 6E 75
+    6D 62 65 72 20 36 20 6F 75 74 20 6F 66 20 6D 61
+    78 69 6D 69 75 6D 20 31 32 30 30 2E 20 41 6C 6C
+    0D 0A
+- frame_number: 17
+  len_frame_pcap: 130
+  len_frame_medium: 134
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 74 CA DE 40 00 33 06 F6 13 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 96 A2 20 87 48 30 50 18
+    00 73 60 E0 00 00 20 74 72 61 6E 73 66 65 72 73
+    20 74 6F 20 61 6E 64 20 66 72 6F 6D 20 61 72 63
+    68 69 76 65 20 61 72 65 20 6C 6F 67 67 65 64 2E
+    20 49 66 20 79 6F 75 20 64 6F 20 6E 6F 74 20 6C
+    69 6B 65 20 74 68 69 73 20 70 6F 6C 69 63 79 2C
+    0D 0A
+- frame_number: 18
+  len_frame_pcap: 72
+  len_frame_medium: 76
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 3A CA DF 40 00 33 06 F6 4C 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 96 EE 20 87 48 30 50 18
+    00 73 53 76 00 00 20 64 69 73 63 6F 6E 6E 65 63
+    74 20 6E 6F 77 21 0D 0A
+- frame_number: 19
+  len_frame_pcap: 60
+  len_frame_medium: 64
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 2B CA E0 40 00 33 06 F6 5A 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 97 00 20 87 48 30 50 18
+    00 73 51 3A 00 00 20 0D 0A 00 00 00
+- frame_number: 20
+  len_frame_pcap: 54
+  len_frame_medium: 60
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 28 57 A2 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 30 E0 71 97 03 50 10
+    1D 74 86 AC 00 00
+- frame_number: 21
+  len_frame_pcap: 128
+  len_frame_medium: 132
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 72 CA E1 40 00 33 06 F6 12 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 97 03 20 87 48 30 50 18
+    00 73 40 C3 00 00 20 57 65 20 73 65 72 76 65 20
+    61 73 20 74 68 65 20 66 74 70 2E 66 69 2E 6D 75
+    6E 69 2E 63 7A 2C 20 66 74 70 2E 6C 69 6E 75 78
+    2E 63 7A 2C 20 61 6E 64 20 66 74 70 2E 63 73 74
+    75 67 2E 63 7A 20 61 72 63 68 69 76 65 2C 0D 0A
+- frame_number: 22
+  len_frame_pcap: 123
+  len_frame_medium: 127
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 6D CA E2 40 00 33 06 F6 16 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 97 4D 20 87 48 30 50 18
+    00 73 EC DA 00 00 20 61 6E 64 20 77 65 20 68 61
+    76 65 20 6C 6F 74 20 6F 66 20 4C 69 6E 75 78 2D
+    2C 20 55 4E 49 58 2D 2C 20 61 6E 64 20 54 65 58
+    2D 72 65 6C 61 74 65 64 20 73 74 75 66 66 20 68
+    65 72 65 2E 20 4C 6F 6F 6B 0D 0A
+- frame_number: 23
+  len_frame_pcap: 54
+  len_frame_medium: 60
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 28 57 A3 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 30 E0 71 97 92 50 10
+    1C E5 86 AC 00 00
+- frame_number: 24
+  len_frame_pcap: 121
+  len_frame_medium: 125
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 6B CA E3 40 00 33 06 F6 17 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 97 92 20 87 48 30 50 18
+    00 73 A1 69 00 00 20 61 74 20 74 68 65 20 2F 70
+    75 62 2F 52 4F 41 44 4D 41 50 20 28 6F 72 20 2F
+    70 75 62 2F 52 4F 41 44 4D 41 50 2E 68 74 6D 6C
+    29 20 66 6F 72 20 64 65 74 61 69 6C 73 2E 20 54
+    68 65 20 66 69 6C 65 0D 0A
+- frame_number: 25
+  len_frame_pcap: 128
+  len_frame_medium: 132
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 72 CA E4 40 00 33 06 F6 0F 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 97 D5 20 87 48 30 50 18
+    00 73 DD D9 00 00 20 2F 70 75 62 2F 52 45 41 44
+    4D 45 2E 75 70 6C 6F 61 64 73 20 73 74 61 74 65
+    73 20 74 68 65 20 72 75 6C 65 73 20 66 6F 72 20
+    75 70 6C 6F 61 64 69 6E 67 20 64 61 74 61 20 74
+    6F 20 74 68 69 73 20 73 65 72 76 65 72 2E 0D 0A
+- frame_number: 26
+  len_frame_pcap: 473
+  len_frame_medium: 477
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    01 CB CA E5 40 00 33 06 F4 B5 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 98 1F 20 87 48 30 50 18
+    00 73 0E 16 00 00 20 54 68 65 20 73 65 72 76 65
+    72 20 69 73 20 61 76 61 6C 69 61 62 6C 65 20 76
+    69 61 20 72 73 79 6E 63 20 61 6E 64 20 48 54 54
+    50 20 70 72 6F 74 6F 63 6F 6C 73 2E 20 55 73 65
+    20 74 68 65 20 66 6F 6C 6C 6F 77 69 6E 67 20 55
+    52 4C 73 3A 0D 0A 20 72 73 79 6E 63 3A 2F 2F 66
+    74 70 2E 66 69 2E 6D 75 6E 69 2E 63 7A 2F 70 75
+    62 20 61 6E 64 20 68 74 74 70 3A 2F 2F 66 74 70
+    2E 66 69 2E 6D 75 6E 69 2E 63 7A 2F 70 75 62 2F
+    2E 0D 0A 20 54 68 65 20 73 65 72 76 65 72 20 69
+    73 20 61 76 61 69 6C 61 62 6C 65 20 76 69 61 20
+    46 54 50 20 6F 76 65 72 20 49 50 76 36 20 61 74
+    20 66 74 70 3A 2F 2F 66 74 70 36 2E 6C 69 6E 75
+    78 2E 63 7A 2F 20 61 73 20 77 65 6C 6C 2E 0D 0A
+    20 4C 6F 6F 6B 20 61 74 20 68 74 74 70 3A 2F 2F
+    77 77 77 2E 6C 69 6E 75 78 2E 63 7A 2F 73 74 61
+    74 73 2F 20 66 6F 72 20 74 68 65 20 68 61 72 64
+    77 61 72 65 20 63 6F 6E 66 69 67 75 72 61 74 69
+    6F 6E 20 61 6E 64 0D 0A 20 73 74 61 74 69 73 74
+    69 63 73 20 6F 66 20 74 68 69 73 20 73 65 72 76
+    65 72 2E 0D 0A 20 0D 0A 20 2D 53 79 73 74 65 6D
+    20 41 64 6D 69 6E 69 73 74 72 61 74 6F 72 20 3C
+    66 74 70 2D 61 64 6D 69 6E 40 66 69 2E 6D 75 6E
+    69 2E 63 7A 3E 0D 0A 32 33 30 20 41 6E 6F 6E 79
+    6D 6F 75 73 20 61 63 63 65 73 73 20 67 72 61 6E
+    74 65 64 2C 20 72 65 73 74 72 69 63 74 69 6F 6E
+    73 20 61 70 70 6C 79 0D 0A
+- frame_number: 27
+  len_frame_pcap: 54
+  len_frame_medium: 60
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 28 57 A4 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 30 E0 71 99 C2 50 10
+    20 00 86 AC 00 00
+- frame_number: 28
+  len_frame_pcap: 86
+  len_frame_medium: 90
+  src_mac: ff:ff:ff:ff:ff:ff
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.1
+  dst_ip: 192.168.1.255
+  flags_mf: false
+  frag_offset: 0
+  protocol: UDP
+  src_port: 520
+  dst_port: 520
+  app_protocol: RIP
+  hexa_frame: |
+    FF FF FF FF FF FF 00 02 CF AB A2 4C 08 00 45 00
+    00 48 02 48 00 00 01 11 33 0D C0 A8 01 01 C0 A8
+    01 FF 02 08 02 08 00 34 C0 C3 02 01 00 00 00 02
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    00 02 00 02 00 00 D4 37 E0 21 00 00 00 00 00 00
+    00 00 00 00 00 01
+- frame_number: 29
+  len_frame_pcap: 66
+  len_frame_medium: 70
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.175.98.37
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52543
+  dst_port: 2222
+  app_protocol:
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 34 57 A5 40 00 80 06 00 00 C0 A8 01 21 93 AF
+    62 25 CD 3F 08 AE C0 30 A3 A6 00 00 00 00 80 02
+    20 00 B7 C4 00 00 02 04 05 B4 01 03 03 08 01 01
+    04 02
+- frame_number: 30
+  len_frame_pcap: 62
+  len_frame_medium: 66
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.175.98.37
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52543
+  dst_port: 2222
+  app_protocol:
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 30 57 A6 40 00 80 06 00 00 C0 A8 01 21 93 AF
+    62 25 CD 3F 08 AE C0 30 A3 A6 00 00 00 00 70 02
+    20 00 B7 C0 00 00 02 04 05 B4 01 01 04 02
+- frame_number: 31
+  len_frame_pcap: 60
+  len_frame_medium: 64
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 2E 57 A7 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 30 E0 71 99 C2 50 18
+    20 00 86 B2 00 00 51 55 49 54 0D 0A
+- frame_number: 32
+  len_frame_pcap: 68
+  len_frame_medium: 72
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 36 CA E6 40 00 33 06 F6 49 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 99 C2 20 87 48 36 50 18
+    00 73 89 9C 00 00 32 32 31 20 47 6F 6F 64 62 79
+    65 2E 0D 0A
+- frame_number: 33
+  len_frame_pcap: 54
+  len_frame_medium: 60
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 28 57 A8 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 36 E0 71 99 D0 50 11
+    1F F2 86 AC 00 00
+- frame_number: 34
+  len_frame_pcap: 60
+  len_frame_medium: 64
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 28 CA E7 40 00 33 06 F6 56 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 99 D0 20 87 48 36 50 11
+    00 73 78 7B 00 00 00 00 00 00 00 00
+- frame_number: 35
+  len_frame_pcap: 54
+  len_frame_medium: 60
+  src_mac: 00:02:cf:ab:a2:4c
+  dst_mac: b4:b5:2f:74:cb:ae
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.33
+  dst_ip: 147.251.48.205
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 52542
+  dst_port: 21
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+    00 28 57 A9 40 00 80 06 00 00 C0 A8 01 21 93 FB
+    30 CD CD 3E 00 15 20 87 48 37 E0 71 99 D1 50 10
+    1F F2 86 AC 00 00
+- frame_number: 36
+  len_frame_pcap: 60
+  len_frame_medium: 64
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.251.48.205
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 21
+  dst_port: 52542
+  app_protocol: FTP-CONTROL
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 28 CA E8 40 00 33 06 F6 55 93 FB 30 CD C0 A8
+    01 21 00 15 CD 3E E0 71 99 D1 20 87 48 37 50 10
+    00 73 78 7A 00 00 00 00 00 00 00 00
+- frame_number: 37
+  len_frame_pcap: 86
+  len_frame_medium: 90
+  src_mac: ff:ff:ff:ff:ff:ff
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 192.168.1.1
+  dst_ip: 192.168.1.255
+  flags_mf: false
+  frag_offset: 0
+  protocol: UDP
+  src_port: 520
+  dst_port: 520
+  app_protocol: RIP
+  hexa_frame: |
+    FF FF FF FF FF FF 00 02 CF AB A2 4C 08 00 45 00
+    00 48 02 49 00 00 01 11 33 0C C0 A8 01 01 C0 A8
+    01 FF 02 08 02 08 00 34 C0 C3 02 01 00 00 00 02
+    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    00 02 00 02 00 00 D4 37 E0 21 00 00 00 00 00 00
+    00 00 00 00 00 01
+- frame_number: 38
+  len_frame_pcap: 60
+  len_frame_medium: 64
+  src_mac: b4:b5:2f:74:cb:ae
+  dst_mac: 00:02:cf:ab:a2:4c
+  frame_type: ETHERNET II
+  ether_type: IPv4
+  src_ip: 147.175.98.37
+  dst_ip: 192.168.1.33
+  flags_mf: false
+  frag_offset: 0
+  protocol: TCP
+  src_port: 2222
+  dst_port: 52538
+  app_protocol:
+  hexa_frame: |
+    B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+    00 28 FE EB 00 00 FE 06 06 46 93 AF 62 25 C0 A8
+    01 21 08 AE CD 3A 00 00 00 00 E4 D7 C7 69 50 04
+    20 00 56 18 00 00 00 00 00 00 00 00
+pcap_name: V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\resources\eth-3.pcap
+ipv4_senders:
+- node: 192.168.1.33
+  number_of_sent_packets: 14
+- node: 147.251.48.205
+  number_of_sent_packets: 21
+- node: 192.168.1.1
+  number_of_sent_packets: 2
+- node: 147.175.98.37
+  number_of_sent_packets: 1
+max_send_packets_by:
+- 147.251.48.205

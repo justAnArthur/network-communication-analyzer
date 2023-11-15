@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="93d8fa80-46f1-48de-b82e-0b9263f9893a" name="Changes" comment="- implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02 custom_protocol_based_on_UDP/02 custom_protocol_based_on_UDP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../02 custom_protocol_based_on_UDP/02 custom_protocol_based_on_UDP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02 custom_protocol_based_on_UDP/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../02 custom_protocol_based_on_UDP/utils.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;justAnArthur&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9c87f832-7912-4a5b-b19d-35aa51f6e281" />
+        <option name="url" value="https://github.com/justAnArthur/PKS.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="shared" />
+    </order>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ViEC2shGhrqINs2AoLHVqaOTfw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;V:/justAnArthur/university/PKS/assignments/01 network-communication-analyzer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\01_2_Artur_Kozubov\Protocols" />
+      <recent name="V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\01_2_Artur_Kozubov" />
+      <recent name="V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\resources" />
+      <recent name="V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\validator" />
+      <recent name="V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\resources" />
+      <recent name="V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\validator" />
+    </key>
+    <key name="ImportExportFile.TargetDir.RECENT_KEYS">
+      <recent name="V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="python main.py -p HTTP" />
+      <command value="python main.py resources/trace_1.pcap" />
+      <command value="python main.py resources/trace-1.pcap -p" />
+      <command value="python main.py resources/trace-1.pcap -p HTTPdasd" />
+      <command value="python main.py resources/trace-1.pcap " />
+      <command value="python main.py resources/trace-29.pcap -p TCP" />
+      <command value="python main.py resources/eth-3.pcap -p TCP" />
+      <command value="python main.py resources/eth-28.pcap -p TCP" />
+      <command value="python main.py resources/trace-28.pcap -p TCP" />
+      <command value="python main.py resources/trace-9\.pcap -p ARP" />
+      <command value="python main.py resources/trace-9.pcap -p ARP" />
+      <command value="python main.py resources/with-arp.pcap " />
+      <command value="python main.py resources/with-arp-2.pcap " />
+      <command value="python main.py resources/with-arp.pcap -p ARP" />
+      <command value="python main.py resources/with-arp.pcap" />
+      <command value="python main.py resources/trace-2.pcap " />
+      <command value="python main.py resources/trace-2.pcap -p ARP" />
+      <command value="python main.py resources/trace-3.pcap -p ARP" />
+      <command value="python main.py resources/trace-5.pcap -p ARP" />
+      <command value="python main.py resources/eth-2.pcap -p ARP" />
+      <command value="python main.py resources/eth-3.pcap -p ARP" />
+      <command value="python main.py resources/eth-4.pcap " />
+      <command value="python main.py resources/eth-5.pcap -p ARP" />
+      <command value="python main.py resources/eth-6.pcap -p ARP" />
+      <command value="python main.py resources/eth-7.pcap -p ARP" />
+      <command value="python main.py resources/eth-8.pcap -p ARP" />
+      <command value="python main.py resources/eth-9.pcap -p ARP" />
+      <command value="python main.py resources/trace-6.pcap -p ARP" />
+      <command value="python main.py resources/trace-7.pcap -p ARP" />
+      <command value="python main.py resources/trace-8.pcap -p ARP" />
+      <command value="python main.py resources/trace-8.pcap -p HTTP" />
+      <command value="python main.py resources/eth-arp.pcap -p HTTP" />
+      <command value="python main.py resources/trace-4.pcap -p ARP" />
+      <command value="python main.py resources/eth-arp.pcap -p ARP" />
+      <command value="python main.py resources/eth-arp.pcap -p HTTPS" />
+      <command value="python main.py resources/eth-arp.pcap -p SSH" />
+      <command value="python main.py resources/with-ssh.pcap -p SSH" />
+      <command value="python main.py resources/eth-1.pcap -p HTTPS" />
+      <command value="python main.py resources/eth-2.pcap -p HTTPS" />
+      <command value="python main.py resources/eth-3.pcap -p HTTPS" />
+      <command value="python main.py resources/eth-4.pcap -p HTTPS" />
+      <command value="python main.py resources/eth-5.pcap -p HTTPS" />
+      <command value="python main.py resources/eth-6.pcap -p HTTPS" />
+      <command value="python main.py resources/eth-7.pcap -p HTTPS" />
+      <command value="python main.py resources/trace-1.pcap -p HTTPS" />
+      <command value="python main.py resources/trace-2.pcap -p HTTPS" />
+      <command value="python main.py resources/trace-3.pcap -p HTTPS" />
+      <command value="python main.py resources/trace-4.pcap -p HTTPS" />
+      <command value="python main.py resources/trace-5.pcap -p HTTPS" />
+      <command value="python main.py resources/with-https.pcap -p HTTPS" />
+      <command value="python main.py resources/trace-26.pcap -p HTTP" />
+      <command value="python main.py resources/trace-26.pcap " />
+      <command value="python main.py resources/trace-15.pcap " />
+      <command value="python main.py resources/eth-8.pcap " />
+      <command value="python main.py resources/eth-9.pcap " />
+      <command value="python first_point.py resources/eth-9.pcap " />
+      <command value="python .\validator\validator.py -s .\validator\schema-task-1.yaml -d .\packets-all.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-task-1.yaml -d .\validator\packets-all.yaml" />
+      <command value="python first_point.py resources/eth-1.pcap " />
+      <command value="python main.py resources/eth-2.pcap -p HTTP" />
+      <command value="python main.py resources/eth-6.pcap -p HTTP" />
+      <command value="python main.py resources/eth-7.pcap -p HTTP" />
+      <command value="python main.py resources/eth-8.pcap -p HTTP" />
+      <command value="python main.py resources/eth-9.pcap -p HTTP" />
+      <command value="python main.py resources/eth-10.pcap -p HTTP" />
+      <command value="python main.py resources/trace-1.pcap -p HTTP" />
+      <command value="python main.py resources/trace-2.pcap -p HTTP" />
+      <command value="python main.py resources/trace-3.pcap -p HTTP" />
+      <command value="python main.py resources/trace-4.pcap " />
+      <command value="python .\validator\validator.py -s .\validator\packets-all.yaml -d .\resources\trace-4.yaml" />
+      <command value="python main.py resources/with-icmp.pcap" />
+      <command value="python main.py resources/icmps.pcap" />
+      <command value="python main.py resources/eth-5.pcap" />
+      <command value="python main.py resources/eth-6.pcap" />
+      <command value="python main.py resources/eth-7.pcap" />
+      <command value="python main.py resources/eth-arp.pcap" />
+      <command value="python main.py resources/eth-trace-1.pcap" />
+      <command value="python main.py resources/trace-3.pcap" />
+      <command value="python main.py resources/trace-4.pcap" />
+      <command value="python main.py resources/trace-5.pcap" />
+      <command value="python main.py resources/trace-6.pcap" />
+      <command value="python main.py resources/trace-7.pcap" />
+      <command value="python main.py resources/trace-8.pcap" />
+      <command value="python main.py resources/trace-12.pcap" />
+      <command value="python main.py resources/trace-13.pcap" />
+      <command value="python main.py resources/trace-14.pcap" />
+      <command value="python main.py resources/trace-16.pcap" />
+      <command value="python main.py resources/trace-17.pcap" />
+      <command value="python main.py resources/trace-18.pcap" />
+      <command value="python main.py resources/trace-19.pcap" />
+      <command value="python main.py resources/trace-20.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-20.yaml" />
+      <command value="python main.py resources/trace-21.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-21.yaml" />
+      <command value="python main.py resources/trace-22.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-22.yaml" />
+      <command value="python main.py resources/trace-23.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-23.yaml" />
+      <command value="python main.py resources/trace-24.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-24.yaml" />
+      <command value="python main.py resources/trace-25.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-25.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-26.yaml" />
+      <command value="python main.py resources/trace-27.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-27.yaml" />
+      <command value="python main.py resources/trace-28.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-28.yaml" />
+      <command value="python main.py resources/trace-29.pcap" />
+      <command value="python first_point.py resources/eth-1.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-task-1.yaml -d .\resources\eth-1.yaml" />
+      <command value="python first_point.py resources/eth-2.pcap" />
+      <command value="python main.py resources/trace-15.pcap -p TFTP" />
+      <command value="python main.py resources/trace-15.pcap" />
+      <command value="python main.py resources/eth-8.pcap" />
+      <command value="python main.py resources/tftps.pcap" />
+      <command value="python main.py resources/tftps-2.pcap" />
+      <command value="python main.py resources/tftp-3.pcappng" />
+      <command value="python main.py resources/tftp-3.pcapng" />
+      <command value="python .\validator\validator.py -s .\validator\schema-task-1.yaml -d .\resources\eth-2.yaml" />
+      <command value="python main.py resources/trace-4.pcap -p HTTP" />
+      <command value="python main.py resources/eth-2.pcap" />
+      <command value="python main.py resources/eth-3.pcap" />
+      <command value="python main.py resources/trace-1.pcap" />
+      <command value="python main.py resources/trace-2.pcap" />
+      <command value="python main.py resources/trace-9.pcap" />
+      <command value="python main.py resources/trace-10.pcap" />
+      <command value="python main.py resources/trace-11.pcap" />
+      <command value="python main.py resources/trace_ip_nad_20_B.pcap" />
+      <command value="python main.py resources/eth-4.pcap" />
+      <command value="python main.py V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\resources\\eth-1.pcap" />
+      <command value="python main.py V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\resources\eth-1.pcap" />
+      <command value="python main.py resources/icmps.pcap -p ICMP" />
+      <command value="python main.py resources/trace_ip_nad_20_B -p ICMP" />
+      <command value="python main.py resources/trace_ip_nad_20_B.pcap -p ICMP" />
+      <command value="python main.py resources/with-icmp.pcap -p ICMP" />
+      <command value="python main.py C:\Users\kozub\Downloads\ipv4frags.pcap" />
+      <command value="python main.py C:\Users\kozub\Downloads\ipv4frags.pcap " />
+      <command value="python main.py resources/eth-9.pcap -P Dad" />
+      <command value="python main.py resources/eth-9.pcap -p Dad" />
+      <command value="python main.py C:\Users\kozub\Downloads\ipv4frags.pcap -p ICMP" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d C:\Users\kozub\Downloads\ipv4frags.pcap -p ICMP" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d C:\Users\kozub\Downloads\ipv4frags.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\ipv4frags" />
+      <command value="python V:/justAnArthur/university/PKS/assignments/01 network-communication-analyzer/main.py" />
+      <command value="python V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\main.py" />
+      <command value="python V:/justAnArthur/university/PKS/assignments/01\ network-communication-analyzer/main.py" />
+      <command value="python &quot;V:/justAnArthur/university/PKS/assignments/01 network-communication-analyzer/main.py&quot;" />
+      <command value="python main.py resources/eth-9.pcap" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .resources\ipv4frags.yaml" />
+      <command value="python main.py resources/eth-1.pcap" />
+      <command value="python main.py resources/eth-1.pcap -P HTTP" />
+      <command value="python main.py resources/eth-1.pcap -p HTTP" />
+      <command value="python main.py resources/eth-1.pcap -p ARP" />
+      <command value="python main.py resources/eth-1.pcap -p ICMP" />
+      <command value="python main.py resources/ipv4flags.pcap -p ICMP" />
+      <command value="python main.py ./resources/ipv4flags.pcap -p ICMP" />
+      <command value="python main.py resources/ipv4frags.pcap -p ICMP" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resourcesipv4frags.pcap.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\ipv4frags.pcap.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\ipv4frags.yaml" />
+      <command value="python tes" />
+      <command value="python ./validator/validator.py -s V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\validator\\schema-all.yaml -d V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\resources\\eth-1.yaml" />
+      <command value="python ./validator/validator.py -s &quot;V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\validator\\schema-all.yaml&quot; -d &quot;V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\resources\\eth-1.yaml&quot;" />
+      <command value="python ./validator/validator.py -s &quot;V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\validator\\schema-all.yaml&quot; -d &quot;V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\resources\\eth-1.yaml&quot; " />
+      <command value="python test.py" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-1" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-1.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-2.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-5.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-7.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-8.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-9.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-arp.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\icmps.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\ipv4flags.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\tftps-1.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\tftps-2.yaml" />
+      <command value="python main.py resources/tftps-3.pcap" />
+      <command value="python main.py resources/tftps-3.pcap -p TFTP" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\tftps-3.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-2.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-3.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-4.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-5.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-6.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-8.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-9.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-10.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-11.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-12.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-13.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-14.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-15.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-17.yaml" />
+      <command value="python main.py resources/trace-16.pcap -p IMCP" />
+      <command value="python main.py resources/trace-16.pcap -p ICMP" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-16.yaml" />
+      <command value="python main.py resources/trace-1.pcap -p ARP" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-1.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-18.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-19.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-29.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace_ip_nad_20_B.yaml" />
+      <command value="python main.py resources/eth-5.pcap -p SSH" />
+      <command value="python main.py resources/eth-4.pcap -p ARP" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-4.yaml" />
+      <command value="python main.py resources/eth-6.pcap -p TELNET" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-6.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-3.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-7.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d ./resources/trace-7.yaml" />
+      <command value="python .\validator\validator.py -s .\validator\schema-all.yaml -d ./resources/eth-6.yaml" />
+      <command value="python main.py resources/trace-26.pcap" />
+      <command value="python main.py resources/z1-final_v2.pcap" />
+      <command value="python main.py resources/z1-final_v2.pcap -p TFTP" />
+      <command value="python main.py resources/z1-final_v2.pcap -p ARP" />
+      <command value="python main.py resources/z1-final_v2.pcap -p ICMP" />
+      <command value="python main.py resources/z1-final_v2.pcap -p TCP" />
+      <command value="python main.py resources/z1-final_v2.pcap -p HTTP" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.python main.py resources/z1-final_v2.pcap -p HTTP">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="01 network-communication-analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="-p HTTP" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python .\validator\validator.py -s .\validator\schema-all.yaml -d ./resources/trace-7.yaml" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01 network-communication-analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value=".\validator\validator.py" />
+      <option name="PARAMETERS" value="-s .\validator\schema-all.yaml -d ./resources/trace-7.yaml" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python main.py resources/z1-final_v2.pcap -p ARP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01 network-communication-analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="main.py" />
+      <option name="PARAMETERS" value="resources/z1-final_v2.pcap -p ARP" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python main.py resources/z1-final_v2.pcap -p HTTP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01 network-communication-analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="main.py" />
+      <option name="PARAMETERS" value="resources/z1-final_v2.pcap -p HTTP" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python main.py resources/z1-final_v2.pcap -p ICMP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01 network-communication-analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="main.py" />
+      <option name="PARAMETERS" value="resources/z1-final_v2.pcap -p ICMP" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python main.py resources/z1-final_v2.pcap -p TCP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01 network-communication-analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="main.py" />
+      <option name="PARAMETERS" value="resources/z1-final_v2.pcap -p TCP" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python main.py resources/z1-final_v2.pcap -p TFTP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01 network-communication-analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="main.py" />
+      <option name="PARAMETERS" value="resources/z1-final_v2.pcap -p TFTP" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.python main.py resources/z1-final_v2.pcap -p HTTP" />
+        <item itemvalue="Python.python main.py resources/z1-final_v2.pcap -p TCP" />
+        <item itemvalue="Python.python main.py resources/z1-final_v2.pcap -p ICMP" />
+        <item itemvalue="Python.python main.py resources/z1-final_v2.pcap -p ARP" />
+        <item itemvalue="Python.python main.py resources/z1-final_v2.pcap -p TFTP" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93d8fa80-46f1-48de-b82e-0b9263f9893a" name="Changes" comment="" />
+      <created>1695310369536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695310369536</updated>
+      <workItem from="1695310379293" duration="249000" />
+      <workItem from="1695311718307" duration="3571000" />
+      <workItem from="1695403971217" duration="54000" />
+      <workItem from="1695404035370" duration="7328000" />
+      <workItem from="1695457709083" duration="4705000" />
+      <workItem from="1695467493694" duration="623000" />
+      <workItem from="1695491513911" duration="6213000" />
+      <workItem from="1695618168520" duration="18014000" />
+      <workItem from="1695661839652" duration="27000" />
+      <workItem from="1695664970102" duration="3270000" />
+      <workItem from="1695711665893" duration="2816000" />
+      <workItem from="1695802735791" duration="17435000" />
+      <workItem from="1695895635303" duration="2257000" />
+      <workItem from="1695898327933" duration="9650000" />
+      <workItem from="1695977032325" duration="23000" />
+      <workItem from="1696076150082" duration="4083000" />
+      <workItem from="1696186830227" duration="60000" />
+      <workItem from="1696228594953" duration="10141000" />
+      <workItem from="1696245496463" duration="24000" />
+      <workItem from="1696422680682" duration="4225000" />
+      <workItem from="1696436880400" duration="78000" />
+      <workItem from="1696487096185" duration="654000" />
+      <workItem from="1696492323510" duration="7265000" />
+      <workItem from="1696514012315" duration="2337000" />
+      <workItem from="1696830131717" duration="10000" />
+      <workItem from="1696852553200" duration="42000" />
+      <workItem from="1696853143038" duration="219000" />
+      <workItem from="1697001355190" duration="5349000" />
+      <workItem from="1697019334990" duration="3385000" />
+      <workItem from="1697026919995" duration="4582000" />
+      <workItem from="1697095960920" duration="4124000" />
+      <workItem from="1697116168895" duration="2966000" />
+      <workItem from="1697123482220" duration="4813000" />
+      <workItem from="1697283724374" duration="1928000" />
+      <workItem from="1697286025545" duration="3909000" />
+      <workItem from="1697440552500" duration="77000" />
+      <workItem from="1697444576351" duration="1134000" />
+      <workItem from="1697523625979" duration="642000" />
+      <workItem from="1697625317363" duration="175000" />
+      <workItem from="1697646843889" duration="1711000" />
+      <workItem from="1697713496653" duration="674000" />
+      <workItem from="1697716314971" duration="6308000" />
+      <workItem from="1698052395582" duration="72000" />
+      <workItem from="1698651201492" duration="116000" />
+      <workItem from="1699432074292" duration="706000" />
+    </task>
+    <task id="LOCAL-00001" summary="- better code structure&#10;- getting names from the file&#10;- added test files&#10;- parsing packet to `app_protocol`">
+      <option name="closed" value="true" />
+      <created>1695535725213</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695535725213</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- better code structure&#10;- getting names from the file&#10;- added test files&#10;- parsing packet to `app_protocol`">
+      <option name="closed" value="true" />
+      <created>1695535831184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695535831184</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- .idea">
+      <option name="closed" value="true" />
+      <created>1695535862829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695535862829</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- ipv4 statistics">
+      <option name="closed" value="true" />
+      <created>1695620125827</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695620125827</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- args resolver">
+      <option name="closed" value="true" />
+      <created>1695629374493</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695629374493</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- tcp handler">
+      <option name="closed" value="true" />
+      <created>1695706668265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695706668265</updated>
+    </task>
+    <task id="LOCAL-00007" summary="- fix tcp handler">
+      <option name="closed" value="true" />
+      <created>1695897905221</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695897905221</updated>
+    </task>
+    <task id="LOCAL-00008" summary="- fix with ISL&#10;- set SNAP by LLC's (D|S)SAP&#10;- ICMP adds info printer&#10;- hex format function&#10;- added some protocols">
+      <option name="closed" value="true" />
+      <created>1695906587624</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695906587624</updated>
+    </task>
+    <task id="LOCAL-00009" summary="- write down to file">
+      <option name="closed" value="true" />
+      <created>1695911175596</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695911175596</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- icmp protocol handling">
+      <option name="closed" value="true" />
+      <created>1696232584726</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696232584726</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- tftp handling #todo">
+      <option name="closed" value="true" />
+      <created>1696516201448</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696516201448</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- fix len by medium">
+      <option name="closed" value="true" />
+      <created>1696517324193</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696517324193</updated>
+    </task>
+    <task id="LOCAL-00013" summary="- fix len by medium">
+      <option name="closed" value="true" />
+      <created>1697713788385</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697713788385</updated>
+    </task>
+    <task id="LOCAL-00014" summary="- implementation">
+      <option name="closed" value="true" />
+      <created>1697725483005</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697725483005</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- better code structure&#10;- getting names from the file&#10;- added test files&#10;- parsing packet to `app_protocol`" />
+    <MESSAGE value="- .idea" />
+    <MESSAGE value="- ipv4 statistics" />
+    <MESSAGE value="- args resolver" />
+    <MESSAGE value="- tcp handler" />
+    <MESSAGE value="- fix tcp handler" />
+    <MESSAGE value="- fix with ISL&#10;- set SNAP by LLC's (D|S)SAP&#10;- ICMP adds info printer&#10;- hex format function&#10;- added some protocols" />
+    <MESSAGE value="- write down to file" />
+    <MESSAGE value="- icmp protocol handling" />
+    <MESSAGE value="- tftp handling #todo" />
+    <MESSAGE value="- fix len by medium" />
+    <MESSAGE value="- implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="- implementation" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="hex_format(buf)" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_27_pcap.coverage" NAME="python main.py resources/trace-27.pcap Coverage Results" MODIFIED="1696234824679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_5_pcap__p_ARP.coverage" NAME="python main.py resources/eth-5.pcap -p ARP Coverage Results" MODIFIED="1695818528234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_4_pcap.coverage" NAME="python main.py resources/trace-4.pcap Coverage Results" MODIFIED="1696232670774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_9_pcap.coverage" NAME="python main.py resources/trace-9.pcap Coverage Results" MODIFIED="1697099303945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_22_pcap.coverage" NAME="python main.py resources/trace-22.pcap Coverage Results" MODIFIED="1696234758570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_9_pcap__p_Dad.coverage" NAME="python main.py resources/eth-9.pcap -p Dad Coverage Results" MODIFIED="1697284354201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_15_pcap__p_TFTP.coverage" NAME="python main.py resources/trace-15.pcap -p TFTP Coverage Results" MODIFIED="1696493588025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_4_pcap__p_HTTP.coverage" NAME="python main.py resources/trace-4.pcap -p HTTP Coverage Results" MODIFIED="1697030748026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_21_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-21.yaml Coverage Results" MODIFIED="1696234755128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_26_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-26.yaml Coverage Results" MODIFIED="1696234822040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_ipv4frags_pcap__p_ICMP.coverage" NAME="python main.py resources/ipv4frags.pcap -p ICMP Coverage Results" MODIFIED="1697287077374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_tftps_pcap.coverage" NAME="python main.py resources/tftps.pcap Coverage Results" MODIFIED="1696494390393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_first_point_py_resources_eth_9_pcap.coverage" NAME="python first_point.py resources/eth-9.pcap Coverage Results" MODIFIED="1696076394028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_z1_final_v2_pcap__p_TFTP.coverage" NAME="python main.py resources/z1-final_v2.pcap -p TFTP Coverage Results" MODIFIED="1697727471400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_9_pcap__P_Dad.coverage" NAME="python main.py resources/eth-9.pcap -P Dad Coverage Results" MODIFIED="1697284330111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_z1_final_v2_pcap__p_ICMP.coverage" NAME="python main.py resources/z1-final_v2.pcap -p ICMP Coverage Results" MODIFIED="1697727577459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_1_pcap__p_ARP.coverage" NAME="python main.py resources/trace-1.pcap -p ARP Coverage Results" MODIFIED="1697289068646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_4_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-4.yaml Coverage Results" MODIFIED="1697713569769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python__V__justAnArthur_university_PKS_assignments_01_network_communication_analyzer_main_py_.coverage" NAME="python &quot;V:/justAnArthur/university/PKS/assignments/01 network-communication-analyzer/main.py&quot; Coverage Results" MODIFIED="1697285312007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_tftp_3_pcappng.coverage" NAME="python main.py resources/tftp-3.pcappng Coverage Results" MODIFIED="1696494653857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_tftps_3_pcap__p_TFTP.coverage" NAME="python main.py resources/tftps-3.pcap -p TFTP Coverage Results" MODIFIED="1697288827084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_6_pcap__p_ARP.coverage" NAME="python main.py resources/eth-6.pcap -p ARP Coverage Results" MODIFIED="1695818531718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_tftps_3_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\tftps-3.yaml Coverage Results" MODIFIED="1697288830924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_with_arp_pcap.coverage" NAME="python main.py resources/with-arp.pcap Coverage Results" MODIFIED="1695808441978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_5_pcap__p_HTTPS.coverage" NAME="python main.py resources/trace-5.pcap -p HTTPS Coverage Results" MODIFIED="1695897157695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_9_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-9.yaml Coverage Results" MODIFIED="1697288662824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_3_pcap__p_TCP.coverage" NAME="python main.py resources/eth-3.pcap -p TCP Coverage Results" MODIFIED="1695722591847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_z1_final_v2_pcap__p_TCP.coverage" NAME="python main.py resources/z1-final_v2.pcap -p TCP Coverage Results" MODIFIED="1697727729700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_8_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-8.yaml Coverage Results" MODIFIED="1697288862193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_8_pcap__p_ARP.coverage" NAME="python main.py resources/eth-8.pcap -p ARP Coverage Results" MODIFIED="1695818537910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_1_pcap__p_HTTP.coverage" NAME="python main.py resources/eth-1.pcap -p HTTP Coverage Results" MODIFIED="1697286947525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_7_pcap__p_ARP.coverage" NAME="python main.py resources/eth-7.pcap -p ARP Coverage Results" MODIFIED="1695818534740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_7_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d ./resources/trace-7.yaml Coverage Results" MODIFIED="1697713757067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_tftp_3_pcapng.coverage" NAME="python main.py resources/tftp-3.pcapng Coverage Results" MODIFIED="1696494660135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_task_1_yaml__d___resources_eth_2_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-task-1.yaml -d .\resources\eth-2.yaml Coverage Results" MODIFIED="1696517107661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_8_pcap__p_HTTP.coverage" NAME="python main.py resources/trace-8.pcap -p HTTP Coverage Results" MODIFIED="1695821649211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_2_pcap__p_HTTP.coverage" NAME="python main.py resources/trace-2.pcap -p HTTP Coverage Results" MODIFIED="1696228664662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_11_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-11.yaml Coverage Results" MODIFIED="1697288873494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_12_pcap.coverage" NAME="python main.py resources/trace-12.pcap Coverage Results" MODIFIED="1696232721390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_8_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-8.yaml Coverage Results" MODIFIED="1697288659871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$main.coverage" NAME="main Coverage Results" MODIFIED="1697647658102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_V___justAnArthur__university__PKS__assignments__01_network_communication_analyzer__main_py.coverage" NAME="python V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\main.py Coverage Results" MODIFIED="1697285214449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_13_pcap.coverage" NAME="python main.py resources/trace-13.pcap Coverage Results" MODIFIED="1696233701387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_2_pcap__p_HTTPS.coverage" NAME="python main.py resources/eth-2.pcap -p HTTPS Coverage Results" MODIFIED="1695897116122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_5_pcap.coverage" NAME="python main.py resources/trace-5.pcap Coverage Results" MODIFIED="1696232674521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_C__Users_kozub_Downloads_ipv4frags_pcap__p_ICMP.coverage" NAME="python main.py C:\Users\kozub\Downloads\ipv4frags.pcap -p ICMP Coverage Results" MODIFIED="1697284781727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_28_pcap.coverage" NAME="python main.py resources/trace-28.pcap Coverage Results" MODIFIED="1696234835718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_8_pcap.coverage" NAME="python main.py resources/eth-8.pcap Coverage Results" MODIFIED="1696494328760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_8_pcap__p_HTTP.coverage" NAME="python main.py resources/eth-8.pcap -p HTTP Coverage Results" MODIFIED="1696228649172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_9_pcap.coverage" NAME="python main.py resources/eth-9.pcap Coverage Results" MODIFIED="1697286762518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_1_pcap__p_ARP.coverage" NAME="python main.py resources/eth-1.pcap -p ARP Coverage Results" MODIFIED="1697286973794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_1.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-1 Coverage Results" MODIFIED="1697288633402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_12_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-12.yaml Coverage Results" MODIFIED="1697288875473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_3_pcap__p_HTTPS.coverage" NAME="python main.py resources/trace-3.pcap -p HTTPS Coverage Results" MODIFIED="1695897150914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_27_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-27.yaml Coverage Results" MODIFIED="1696234831147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_5_pcap__p_HTTPS.coverage" NAME="python main.py resources/eth-5.pcap -p HTTPS Coverage Results" MODIFIED="1695897128954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_trace_1_pcap.coverage" NAME="python main.py resources/eth-trace-1.pcap Coverage Results" MODIFIED="1696232654883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_C__Users_kozub_Downloads_ipv4frags_pcap.coverage" NAME="python main.py C:\Users\kozub\Downloads\ipv4frags.pcap Coverage Results" MODIFIED="1697127334071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_18_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-18.yaml Coverage Results" MODIFIED="1697289075668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_7_pcap__p_HTTP.coverage" NAME="python main.py resources/eth-7.pcap -p HTTP Coverage Results" MODIFIED="1696228645823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_23_pcap.coverage" NAME="python main.py resources/trace-23.pcap Coverage Results" MODIFIED="1696234796380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_V__justAnArthur_university_PKS_assignments_01_network_communication_analyzer_resources_eth_1_pcap.coverage" NAME="python main.py V:\justAnArthur\university\PKS\assignments\01 network-communication-analyzer\resources\eth-1.pcap Coverage Results" MODIFIED="1697119086351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_13_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-13.yaml Coverage Results" MODIFIED="1697288877942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_26_pcap__p_HTTP.coverage" NAME="python main.py resources/trace-26.pcap -p HTTP Coverage Results" MODIFIED="1695911150539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_1_pcap__P_HTTP.coverage" NAME="python main.py resources/eth-1.pcap -P HTTP Coverage Results" MODIFIED="1697286942722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_V___justAnArthur__university__PKS__assignments__01_network_communication_analyzer__resources__eth_1_pcap.coverage" NAME="python main.py V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\resources\\eth-1.pcap Coverage Results" MODIFIED="1697119067803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_21_pcap.coverage" NAME="python main.py resources/trace-21.pcap Coverage Results" MODIFIED="1696234751579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_15_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-15.yaml Coverage Results" MODIFIED="1697288884396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_9_pcap__p_ARP.coverage" NAME="python main.py resources/eth-9.pcap -p ARP Coverage Results" MODIFIED="1695818547850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_with_arp_pcap__p_ARP.coverage" NAME="python main.py resources/with-arp.pcap -p ARP Coverage Results" MODIFIED="1695808374109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_5_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-5.yaml Coverage Results" MODIFIED="1697288649509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_6_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-6.yaml Coverage Results" MODIFIED="1697288855486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_3_pcap.coverage" NAME="python main.py resources/trace-3.pcap Coverage Results" MODIFIED="1696232667914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_2_pcap__p_ARP.coverage" NAME="python main.py resources/eth-2.pcap -p ARP Coverage Results" MODIFIED="1695818378440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_task_1_yaml__d___validator_packets_all_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-task-1.yaml -d .\validator\packets-all.yaml Coverage Results" MODIFIED="1696086662402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_11_pcap.coverage" NAME="python main.py resources/trace-11.pcap Coverage Results" MODIFIED="1697099384206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_6_pcap__p_TELNET.coverage" NAME="python main.py resources/eth-6.pcap -p TELNET Coverage Results" MODIFIED="1697713689053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_5_pcap__p_ARP.coverage" NAME="python main.py resources/trace-5.pcap -p ARP Coverage Results" MODIFIED="1695818367587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_26_pcap.coverage" NAME="python main.py resources/trace-26.pcap Coverage Results" MODIFIED="1697724514039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_1_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-1.yaml Coverage Results" MODIFIED="1697289070555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_16_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-16.yaml Coverage Results" MODIFIED="1697288920629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_3_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-3.yaml Coverage Results" MODIFIED="1697288847274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_7_pcap__p_HTTPS.coverage" NAME="python main.py resources/eth-7.pcap -p HTTPS Coverage Results" MODIFIED="1695897136179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_1_pcap__p_HTTP.coverage" NAME="python main.py resources/trace-1.pcap -p HTTP Coverage Results" MODIFIED="1696228661753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_3_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-3.yaml Coverage Results" MODIFIED="1697713709590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/resources" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_2_pcap.coverage" NAME="python main.py resources/trace-2.pcap Coverage Results" MODIFIED="1697099274566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resourcesipv4frags_pcap_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resourcesipv4frags.pcap.yaml Coverage Results" MODIFIED="1697287085943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_1_pcap.coverage" NAME="python main.py resources/trace-1.pcap Coverage Results" MODIFIED="1697099251352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_z1_final_v2_pcap__p_ARP.coverage" NAME="python main.py resources/z1-final_v2.pcap -p ARP Coverage Results" MODIFIED="1697727547085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_2_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-2.yaml Coverage Results" MODIFIED="1697288845047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_25_pcap.coverage" NAME="python main.py resources/trace-25.pcap Coverage Results" MODIFIED="1696234812375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_with_icmp_pcap.coverage" NAME="python main.py resources/with-icmp.pcap Coverage Results" MODIFIED="1696230496622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_2_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-2.yaml Coverage Results" MODIFIED="1697288641117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_4_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-4.yaml Coverage Results" MODIFIED="1697288849772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py__p_HTTP.coverage" NAME="python main.py -p HTTP Coverage Results" MODIFIED="1695626234998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_28_pcap__p_TCP.coverage" NAME="python main.py resources/trace-28.pcap -p TCP Coverage Results" MODIFIED="1695802751403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_17_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-17.yaml Coverage Results" MODIFIED="1697288890988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_tes.coverage" NAME="python tes Coverage Results" MODIFIED="1697287136152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_ipv4flags_pcap__p_ICMP.coverage" NAME="python main.py resources/ipv4flags.pcap -p ICMP Coverage Results" MODIFIED="1697287044628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_24_pcap.coverage" NAME="python main.py resources/trace-24.pcap Coverage Results" MODIFIED="1696234806111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_ip_nad_20_B_pcap__p_ICMP.coverage" NAME="python main.py resources/trace_ip_nad_20_B.pcap -p ICMP Coverage Results" MODIFIED="1697124983504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_ipv4flags_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\ipv4flags.yaml Coverage Results" MODIFIED="1697288685354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_3_pcap__p_ARP.coverage" NAME="python main.py resources/trace-3.pcap -p ARP Coverage Results" MODIFIED="1695818360197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s_V___justAnArthur__university__PKS__assignments__01_network_communication_analyzer__validator__schema_all_yaml__d_V___justAnArthur__university__PKS__assignments__01_network_communication_analyzer__resources__eth_1_yaml.coverage" NAME="python ./validator/validator.py -s V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\validator\\schema-all.yaml -d V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\resources\\eth-1.yaml Coverage Results" MODIFIED="1697288143229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_4_pcap__p_ARP.coverage" NAME="python main.py resources/eth-4.pcap -p ARP Coverage Results" MODIFIED="1697647930410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_icmps_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\icmps.yaml Coverage Results" MODIFIED="1697288677603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_1_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-1.yaml Coverage Results" MODIFIED="1697288638151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_5_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-5.yaml Coverage Results" MODIFIED="1697288852655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_6_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d ./resources/eth-6.yaml Coverage Results" MODIFIED="1697713765224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_19_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-19.yaml Coverage Results" MODIFIED="1697289078551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_9_pcap__p_ARP.coverage" NAME="python main.py resources/trace-9.pcap -p ARP Coverage Results" MODIFIED="1695804296885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_4_pcap__p_HTTPS.coverage" NAME="python main.py resources/trace-4.pcap -p HTTPS Coverage Results" MODIFIED="1695897154328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_arp_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-arp.yaml Coverage Results" MODIFIED="1697288669480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_10_pcap.coverage" NAME="python main.py resources/trace-10.pcap Coverage Results" MODIFIED="1697099316988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_ipv4frags_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\ipv4frags.yaml Coverage Results" MODIFIED="1697287096618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_1_pcap__p_HTTPdasd.coverage" NAME="python main.py resources/trace-1.pcap -p HTTPdasd Coverage Results" MODIFIED="1695627136037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_6_pcap.coverage" NAME="python main.py resources/eth-6.pcap Coverage Results" MODIFIED="1696232632477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_with_ssh_pcap__p_SSH.coverage" NAME="python main.py resources/with-ssh.pcap -p SSH Coverage Results" MODIFIED="1695896306039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_icmps_pcap.coverage" NAME="python main.py resources/icmps.pcap Coverage Results" MODIFIED="1696231729629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_z1_final_v2_pcap.coverage" NAME="python main.py resources/z1-final_v2.pcap Coverage Results" MODIFIED="1697724881965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_with_arp_2_pcap.coverage" NAME="python main.py resources/with-arp-2.pcap Coverage Results" MODIFIED="1695807920490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_15_pcap.coverage" NAME="python main.py resources/trace-15.pcap Coverage Results" MODIFIED="1696494143855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_1_pcap.coverage" NAME="python main.py resources/eth-1.pcap Coverage Results" MODIFIED="1697286930593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_8_pcap__p_ARP.coverage" NAME="python main.py resources/trace-8.pcap -p ARP Coverage Results" MODIFIED="1695821629420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_14_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-14.yaml Coverage Results" MODIFIED="1697288881320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_with_https_pcap__p_HTTPS.coverage" NAME="python main.py resources/with-https.pcap -p HTTPS Coverage Results" MODIFIED="1695897268418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_first_point_py_resources_eth_1_pcap.coverage" NAME="python first_point.py resources/eth-1.pcap Coverage Results" MODIFIED="1696241055283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_7_pcap.coverage" NAME="python main.py resources/trace-7.pcap Coverage Results" MODIFIED="1696232685477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_29_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-29.yaml Coverage Results" MODIFIED="1697289088032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_3_pcap__p_HTTPS.coverage" NAME="python main.py resources/eth-3.pcap -p HTTPS Coverage Results" MODIFIED="1695897120684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_7_pcap.coverage" NAME="python main.py resources/eth-7.pcap Coverage Results" MODIFIED="1696232635107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_ipv4frags_pcap_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\ipv4frags.pcap.yaml Coverage Results" MODIFIED="1697287090056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_20_pcap.coverage" NAME="python main.py resources/trace-20.pcap Coverage Results" MODIFIED="1696234743972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_7_pcap__p_ARP.coverage" NAME="python main.py resources/trace-7.pcap -p ARP Coverage Results" MODIFIED="1695818558813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_29_pcap.coverage" NAME="python main.py resources/trace-29.pcap Coverage Results" MODIFIED="1696234862436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_with_icmp_pcap__p_ICMP.coverage" NAME="python main.py resources/with-icmp.pcap -p ICMP Coverage Results" MODIFIED="1697125054094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_6_pcap.coverage" NAME="python main.py resources/trace-6.pcap Coverage Results" MODIFIED="1696232677061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_2_pcap__p_HTTPS.coverage" NAME="python main.py resources/trace-2.pcap -p HTTPS Coverage Results" MODIFIED="1695897148036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_10_pcap__p_HTTP.coverage" NAME="python main.py resources/eth-10.pcap -p HTTP Coverage Results" MODIFIED="1696228655494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_task_1_yaml__d___packets_all_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-task-1.yaml -d .\packets-all.yaml Coverage Results" MODIFIED="1696085990594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/validator" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s__V___justAnArthur__university__PKS__assignments__01_network_communication_analyzer__validator__schema_all_yaml___d__V___justAnArthur__university__PKS__assignments__01_network_communication_analyzer__resources__eth_1_yaml_.coverage" NAME="python ./validator/validator.py -s &quot;V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\validator\\schema-all.yaml&quot; -d &quot;V:\\justAnArthur\\university\\PKS\\assignments\\01 network-communication-analyzer\\resources\\eth-1.yaml&quot; Coverage Results" MODIFIED="1697288297266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_28_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-28.yaml Coverage Results" MODIFIED="1696234855213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_6_pcap__p_ARP.coverage" NAME="python main.py resources/trace-6.pcap -p ARP Coverage Results" MODIFIED="1695818555042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_eth_7_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\eth-7.yaml Coverage Results" MODIFIED="1697288657447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_tftps_3_pcap.coverage" NAME="python main.py resources/tftps-3.pcap Coverage Results" MODIFIED="1697288764326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_V__justAnArthur_university_PKS_assignments_01_network_communication_analyzer_main_py.coverage" NAME="python V:/justAnArthur/university/PKS/assignments/01 network-communication-analyzer/main.py Coverage Results" MODIFIED="1697285195043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_task_1_yaml__d___resources_eth_1_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-task-1.yaml -d .\resources\eth-1.yaml Coverage Results" MODIFIED="1696241105489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_tftps_2_pcap.coverage" NAME="python main.py resources/tftps-2.pcap Coverage Results" MODIFIED="1696494579719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_1_pcap__p_HTTPS.coverage" NAME="python main.py resources/eth-1.pcap -p HTTPS Coverage Results" MODIFIED="1695897066078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_1_pcap__p_HTTPS.coverage" NAME="python main.py resources/trace-1.pcap -p HTTPS Coverage Results" MODIFIED="1695897144547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_6_pcap__p_HTTP.coverage" NAME="python main.py resources/eth-6.pcap -p HTTP Coverage Results" MODIFIED="1696228642403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_22_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-22.yaml Coverage Results" MODIFIED="1696234761404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_arp_pcap.coverage" NAME="python main.py resources/eth-arp.pcap Coverage Results" MODIFIED="1696232645833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_14_pcap.coverage" NAME="python main.py resources/trace-14.pcap Coverage Results" MODIFIED="1696232731773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_z1_final_v2_pcap__p_HTTP.coverage" NAME="python main.py resources/z1-final_v2.pcap -p HTTP Coverage Results" MODIFIED="1697727736398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_9__pcap__p_ARP.coverage" NAME="python main.py resources/trace-9\.pcap -p ARP Coverage Results" MODIFIED="1695804292264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_ip_nad_20_B_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace_ip_nad_20_B.yaml Coverage Results" MODIFIED="1697289101267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_8_pcap.coverage" NAME="python main.py resources/trace-8.pcap Coverage Results" MODIFIED="1696232689861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_arp_pcap__p_SSH.coverage" NAME="python main.py resources/eth-arp.pcap -p SSH Coverage Results" MODIFIED="1695896039630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_4_pcap__p_ARP.coverage" NAME="python main.py resources/trace-4.pcap -p ARP Coverage Results" MODIFIED="1695895867913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_5_pcap.coverage" NAME="python main.py resources/eth-5.pcap Coverage Results" MODIFIED="1696232629889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_19_pcap.coverage" NAME="python main.py resources/trace-19.pcap Coverage Results" MODIFIED="1696234624798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_ip_nad_20_B_pcap.coverage" NAME="python main.py resources/trace_ip_nad_20_B.pcap Coverage Results" MODIFIED="1697099471031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_tftps_2_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\tftps-2.yaml Coverage Results" MODIFIED="1697288713365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_V__justAnArthur_university_PKS_assignments_01__network_communication_analyzer_main_py.coverage" NAME="python V:/justAnArthur/university/PKS/assignments/01\ network-communication-analyzer/main.py Coverage Results" MODIFIED="1697285268626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_9_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-9.yaml Coverage Results" MODIFIED="1697288867041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_10_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-10.yaml Coverage Results" MODIFIED="1697288869611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_4_pcap__p_HTTPS.coverage" NAME="python main.py resources/eth-4.pcap -p HTTPS Coverage Results" MODIFIED="1695897124283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_28_pcap__p_TCP.coverage" NAME="python main.py resources/eth-28.pcap -p TCP Coverage Results" MODIFIED="1695722611486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_test_py.coverage" NAME="python test.py Coverage Results" MODIFIED="1697288570171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_1_pcap__p_ICMP.coverage" NAME="python main.py resources/eth-1.pcap -p ICMP Coverage Results" MODIFIED="1697286994758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_5_pcap__p_SSH.coverage" NAME="python main.py resources/eth-5.pcap -p SSH Coverage Results" MODIFIED="1697523795614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_packets_all_yaml__d___resources_trace_4_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\packets-all.yaml -d .\resources\trace-4.yaml Coverage Results" MODIFIED="1696228927168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_20_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-20.yaml Coverage Results" MODIFIED="1696234747397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_16_pcap.coverage" NAME="python main.py resources/trace-16.pcap Coverage Results" MODIFIED="1696234584990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_25_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-25.yaml Coverage Results" MODIFIED="1696234815802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py___resources_ipv4flags_pcap__p_ICMP.coverage" NAME="python main.py ./resources/ipv4flags.pcap -p ICMP Coverage Results" MODIFIED="1697287063249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d__resources_ipv4frags_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .resources\ipv4frags.yaml Coverage Results" MODIFIED="1697286897105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_29_pcap__p_TCP.coverage" NAME="python main.py resources/trace-29.pcap -p TCP Coverage Results" MODIFIED="1695711948896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_ip_nad_20_B__p_ICMP.coverage" NAME="python main.py resources/trace_ip_nad_20_B -p ICMP Coverage Results" MODIFIED="1697124972273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_1_pcap__p.coverage" NAME="python main.py resources/trace-1.pcap -p Coverage Results" MODIFIED="1695626261472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_2_pcap.coverage" NAME="python main.py resources/eth-2.pcap Coverage Results" MODIFIED="1697099202278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_2_pcap__p_ARP.coverage" NAME="python main.py resources/trace-2.pcap -p ARP Coverage Results" MODIFIED="1695818101560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_arp_pcap__p_ARP.coverage" NAME="python main.py resources/eth-arp.pcap -p ARP Coverage Results" MODIFIED="1695895879666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_16_pcap__p_IMCP.coverage" NAME="python main.py resources/trace-16.pcap -p IMCP Coverage Results" MODIFIED="1697288910347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_24_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-24.yaml Coverage Results" MODIFIED="1696234809218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_3_pcap.coverage" NAME="python main.py resources/eth-3.pcap Coverage Results" MODIFIED="1697099240218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_3_pcap__p_ARP.coverage" NAME="python main.py resources/eth-3.pcap -p ARP Coverage Results" MODIFIED="1695818383993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_17_pcap.coverage" NAME="python main.py resources/trace-17.pcap Coverage Results" MODIFIED="1696234607441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_2_pcap__p_HTTP.coverage" NAME="python main.py resources/eth-2.pcap -p HTTP Coverage Results" MODIFIED="1696228634563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_first_point_py_resources_eth_2_pcap.coverage" NAME="python first_point.py resources/eth-2.pcap Coverage Results" MODIFIED="1696241111748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_16_pcap__p_ICMP.coverage" NAME="python main.py resources/trace-16.pcap -p ICMP Coverage Results" MODIFIED="1697288915655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_trace_23_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\trace-23.yaml Coverage Results" MODIFIED="1696234802369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_6_pcap__p_HTTPS.coverage" NAME="python main.py resources/eth-6.pcap -p HTTPS Coverage Results" MODIFIED="1695897132781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_3_pcap__p_HTTP.coverage" NAME="python main.py resources/trace-3.pcap -p HTTP Coverage Results" MODIFIED="1696228668043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_ipv4frags.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\ipv4frags Coverage Results" MODIFIED="1697284876754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python___validator_validator_py__s___validator_schema_all_yaml__d___resources_tftps_1_yaml.coverage" NAME="python .\validator\validator.py -s .\validator\schema-all.yaml -d .\resources\tftps-1.yaml Coverage Results" MODIFIED="1697288708573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_arp_pcap__p_HTTP.coverage" NAME="python main.py resources/eth-arp.pcap -p HTTP Coverage Results" MODIFIED="1695880946280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_9_pcap__p_HTTP.coverage" NAME="python main.py resources/eth-9.pcap -p HTTP Coverage Results" MODIFIED="1696228652463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_1_pcap__p_HTTP_daaddasd.coverage" NAME="python main.py resources/trace-1.pcap -p HTTP daaddasd Coverage Results" MODIFIED="1695628742925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_trace_18_pcap.coverage" NAME="python main.py resources/trace-18.pcap Coverage Results" MODIFIED="1696234617506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_icmps_pcap__p_ICMP.coverage" NAME="python main.py resources/icmps.pcap -p ICMP Coverage Results" MODIFIED="1697124881183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_arp_pcap__p_HTTPS.coverage" NAME="python main.py resources/eth-arp.pcap -p HTTPS Coverage Results" MODIFIED="1695895992926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01_network_communication_analyzer$python_main_py_resources_eth_4_pcap.coverage" NAME="python main.py resources/eth-4.pcap Coverage Results" MODIFIED="1697118391805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

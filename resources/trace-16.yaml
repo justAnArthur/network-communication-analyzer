@@ -1,0 +1,5 @@
+name: PKS2023/24
+pcap_name: resources/trace-16.pcap
+filter_name: ICMP
+complete_comms: []
+partial_comms: []

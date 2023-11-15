@@ -1,0 +1,46 @@
+name: PKS2023/24
+pcap_name: resources/trace-1.pcap
+filter_name: ARP
+complete_comms: []
+partial_comms:
+- number_comm: 1
+  packets:
+  - frame_number: 1
+    len_frame_pcap: 42
+    len_frame_medium: 60
+    src_mac: ff:ff:ff:ff:ff:ff
+    dst_mac: 00:d0:59:a9:3d:68
+    frame_type: ETHERNET II
+    ether_type: ARP
+    hexa_frame: |
+      FF FF FF FF FF FF 00 D0 59 A9 3D 68 08 06 00 01
+      08 00 06 04 00 01 00 D0 59 A9 3D 68 C0 A8 01 69
+      00 00 00 00 00 00 C0 A8 01 01
+- number_comm: 2
+  packets:
+  - frame_number: 2
+    len_frame_pcap: 60
+    len_frame_medium: 64
+    src_mac: 00:d0:59:a9:3d:68
+    dst_mac: 00:06:25:da:af:73
+    frame_type: ETHERNET II
+    ether_type: ARP
+    hexa_frame: |
+      00 D0 59 A9 3D 68 00 06 25 DA AF 73 08 06 00 01
+      08 00 06 04 00 02 00 06 25 DA AF 73 C0 A8 01 01
+      00 D0 59 A9 3D 68 C0 A8 01 69 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00
+- number_comm: 3
+  packets:
+  - frame_number: 6
+    len_frame_pcap: 60
+    len_frame_medium: 64
+    src_mac: ff:ff:ff:ff:ff:ff
+    dst_mac: 00:80:ad:73:8d:ce
+    frame_type: ETHERNET II
+    ether_type: ARP
+    hexa_frame: |
+      FF FF FF FF FF FF 00 80 AD 73 8D CE 08 06 00 01
+      08 00 06 04 00 01 00 80 AD 73 8D CE C0 A8 01 68
+      00 00 00 00 00 00 C0 A8 01 75 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00

@@ -1,0 +1,37 @@
+name: PKS2023/24
+pcap_name: resources/eth-4.pcap
+filter_name: ARP
+complete_comms:
+- number_comm: 1
+  packets:
+  - frame_number: 1
+    len_frame_pcap: 42
+    len_frame_medium: 60
+    src_mac: ff:ff:ff:ff:ff:ff
+    dst_mac: 00:14:38:06:e0:93
+    frame_type: ETHERNET II
+    ether_type: ARP
+    arp_response_ip: 192.168.1.33
+    arp_request_ip: 192.168.1.1
+    arp_ocode: REQUEST
+    hexa_frame: |
+      FF FF FF FF FF FF 00 14 38 06 E0 93 08 06 00 01
+      08 00 06 04 00 01 00 14 38 06 E0 93 C0 A8 01 21
+      00 00 00 00 00 00 C0 A8 01 01
+  - frame_number: 2
+    len_frame_pcap: 60
+    len_frame_medium: 64
+    src_mac: 00:14:38:06:e0:93
+    dst_mac: 00:02:cf:ab:a2:4c
+    frame_type: ETHERNET II
+    ether_type: ARP
+    arp_response_ip: 192.168.1.1
+    arp_request_ip: 192.168.1.33
+    arp_ocode: REPLY
+    arp_response_mac: 00:02:cf:ab:a2:4c
+    hexa_frame: |
+      00 14 38 06 E0 93 00 02 CF AB A2 4C 08 06 00 01
+      08 00 06 04 00 02 00 02 CF AB A2 4C C0 A8 01 01
+      00 14 38 06 E0 93 C0 A8 01 21 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00
+partial_comms: []
